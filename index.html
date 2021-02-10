@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Material Icons from Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Old Font Awesome Icons (Font Awesome 4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Space Guide</title>
+  </head>
+  
+  <body>
+    <section class="hero">
+      <header>
+        <h2 class="logo">Space Topics</h2>
+        <div class="toggle"></div>      
+      </header>
+      <video src="img/orbit.mp4" autoplay loop muted></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Space Flight Explained</h2>
+        <!-- <h3>Starter Guide</h3> -->
+        <p>Somewhat simplified explanations to help deepen your understanding of our growing passions and determination to make space travel as casual as cross-country flying. Come inside to expand your knowledge, ignite your curiosity, or feed your brain some rocket science for fun.</p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/tkdguy85/" target='_blank'><i class="fa fa-linkedin-square"   style="font-size:36px"></i></a></li>
+        <li><a href="https://github.com/tkdguy85/" target='_blank'><i class="fa fa-github-alt"  style="font-size:36px"></i></a></li>
+        <li><a href="mailto:dallasgordon3@gmail.com" target='_blank'><i class="fa fa-envelope-square" style="font-size:36px"></i></a></li>
+      </ul>
+    </section>
+
+    <div class="guide">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Launch</a></li>
+        <li><a href="#">Landing</a></li>
+        <li><a href="#">Fuel</a></li>
+        <li><a href="#">Crashing</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">About Me</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const hero = document.querySelector('.hero');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        hero.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
